@@ -1,0 +1,84 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1px;
+    margin: 1px;
+    box-sizing: border-box;
+}
+nav {
+    width: 100dvw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    padding: 20px;
+}
+.logo {
+    width: 80px;
+}
+
+.menu_links{
+    width: fit-content;
+}
+.menu_link {
+    display: none;
+}
+
+.menu_burger {
+    width: 40px;
+    height: 40px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.hero_image {
+    max-width: 100%;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 750px) {
+    nav {
+        height: 100px;
+    }
+    .menu_burger {
+        display: none;
+    }
+    .menu_link{
+        display: inline-block;
+    }
+
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-areas:"main main new"
+                            "featured featured featured";
+        gap: 14px;
+    }
+
+    .hero{
+        grid-area: main;
+        background-color: aqua;
+    }
+    .newsletter{
+        grid-area: new;
+        background-color: crimson;
+    }
+    .carrousel{
+        grid-area: featured;
+        background-color: coral;
+    }
+}
+
+
+
+
