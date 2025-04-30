@@ -1,3 +1,4 @@
+/*
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -179,6 +180,7 @@ main{
     color: #6f6d71;
     margin: 0;
 }
+*/
 
 
 /*@media (min-width: 800px) {
